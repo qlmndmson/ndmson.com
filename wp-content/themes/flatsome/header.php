@@ -7,8 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />	
+	<link href="<?php echo get_template_directory_uri(); ?>wp-content/themes/flatsome/assets/css/custom_ndmson/css5d62.css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	
 	<?php wp_head(); ?>
 </head>
 

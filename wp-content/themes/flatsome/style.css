@@ -14,3 +14,8 @@ License URI: http://themeforest.net/licenses
 All custom CSS should be added to Flatsome > Advanced > Custom CSS,
 or in the style.css of a Child Theme.
 ***************/
+.header-main {
+    height: 91px;
+    margin-left: 350px;
+    margin-top: 265px;
+}

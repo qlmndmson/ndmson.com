@@ -1,0 +1,9 @@
+/*
+ * See: https://fonts.google.com/license/googlerestricted
+ */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Google Sans Regular'), local('GoogleSans-Regular'), url(http://fonts.gstatic.com/s/googlesans/v9/4UaGrENHsxJlGDuGo1OIlL3Owps.ttf) format('truetype');
+}

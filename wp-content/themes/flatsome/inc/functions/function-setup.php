@@ -121,6 +121,19 @@ function flatsome_scripts() {
   // Register styles (Loaded on request)
   wp_register_style( 'flatsome-effects', $uri .'/assets/css/effects.css', array(), $version, 'all' );
 
+  //Styles - ndmson.com
+	   wp_enqueue_style( 'ndmson-all', $uri .'/assets/css/custom_ndmson/all.css', array(), $version, 'all' );
+	   wp_enqueue_style( 'ndmson-animate', $uri .'/assets/css/custom_ndmson/animate.css', array(), $version, 'all' );
+	   wp_enqueue_style( 'ndmson-basic', $uri .'/assets/css/custom_ndmson/basic.css', array(), $version, 'all' );
+	   wp_enqueue_style( 'ndmson-blogs', $uri .'/assets/css/custom_ndmson/blogs.css', array(), $version, 'all' );
+	   wp_enqueue_style( 'ndmson-blue', $uri .'/assets/css/custom_ndmson/blue.css', array(), $version, 'all' );
+	   wp_enqueue_style( 'ndmson-gradient', $uri .'/assets/css/custom_ndmson/gradient.css', array(), $version, 'all' );
+	   wp_enqueue_style( 'ndmson-ionicons', $uri .'/assets/css/custom_ndmson/ionicons.css', array(), $version, 'all' );
+	   wp_enqueue_style( 'ndmson-layout', $uri .'/assets/css/custom_ndmson/layout.css', array(), $version, 'all' );
+	   wp_enqueue_style( 'ndmson-magnific-popup', $uri .'/assets/css/custom_ndmson/magnific-popup.css', array(), $version, 'all' );
+
+  //End - Styles - ndmson.com
+  
   // Register scripts (Loaded on request)
   wp_register_script( 'flatsome-masonry-js', $uri .'/assets/libs/packery.pkgd.min.js', array( 'jquery' ), $version, true );
   wp_register_script( 'flatsome-isotope-js', $uri .'/assets/libs/isotope.pkgd.min.js', array( 'jquery' ), $version, true );
@@ -134,6 +147,18 @@ function flatsome_scripts() {
     'jquery',
     'hoverIntent',
   ), $version, true );
+
+  // Enqueue ndmson.com scripts
+    wp_enqueue_script( 'ndmson-jquery-min', $uri .'/assets/js/custom_ndmson/jquery.min.js', array('jquery'), $version, true );
+    wp_enqueue_script( 'ndmson-jquery-validate', $uri .'/assets/js/custom_ndmson/jquery.validate.js', array('jquery'), $version, true );
+    wp_enqueue_script( 'ndmson-jquery-magnific-popup', $uri .'/assets/js/custom_ndmson/jquery.magnific-popup.js', array('jquery'), $version, true );
+    wp_enqueue_script( 'ndmson-jquery-imagesloaded-pkgd', $uri .'/assets/js/custom_ndmson/imagesloaded.pkgd.js', array('jquery'), $version, true );
+    wp_enqueue_script( 'ndmson-jquery-masonry-pkgd', $uri .'/assets/js/custom_ndmson/masonry.pkgd.js', array('jquery'), $version, true );
+    wp_enqueue_script( 'ndmson-jquery-masonry-filter', $uri .'/assets/js/custom_ndmson/masonry-filter.js', array('jquery'), $version, true );
+    wp_enqueue_script( 'ndmson-jquery-slimscroll', $uri .'/assets/js/custom_ndmson/jquery.slimscroll.js', array('jquery'), $version, true );
+    wp_enqueue_script( 'ndmson-jquery-scripts', $uri .'/assets/js/custom_ndmson/scripts.js', array('jquery'), $version, true );
+           
+
 
   $sticky_height = get_theme_mod('header_height_sticky', 70);
   if(is_admin_bar_showing()) $sticky_height = $sticky_height + 30;
